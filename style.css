@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,700&display=swap');
+
+*, ::after, ::before {box-sizing: border-box;}
+body {font-family: 'Roboto Mono', monospace; color: #EAAC8B; font-size: 18px; line-height: 1.5; background-image: url('sunset.jpg'); background-size: cover;}
+
+#main {box-sizing: border-box; background: rgba(53, 80, 112, .7); padding: 2em 2em 3em;}
+
+#title {margin-top: 0; color: #FFF; margin-bottom: .25em; line-height: 1.2;}
+#description {color: #E56B6F; margin-bottom: 2em;}
+
+.form-group {margin-bottom: 1.5em;}
+.form-label {display: block; margin-bottom: .5em;}
+.form-control {display: block; width: 100%; padding: .5em; border: 0; border-radius: 3px; line-height: 1.5;}
+.check-label {margin-right: 1em; color: #FFF; display: block;}
+[type='radio'], [type='checkbox'] {margin-right: .5em;}
+button {padding: 1em 3em; border: 0; border-radius: 3px; margin-top: 1em; background: #EAAC8B; color: #355070; font-weight: bold;}
+button:hover {background: #FFF; color: #355070; cursor: pointer;}
+
+@media (min-width: 576px) {
+    #main {margin-left: 20%; padding: 4em; overflow-y: scroll;}
+    .check-label {display: inline-block;}
+}
+
+@media (min-width: 992px) {
+    #main {margin-left: 35%;}
+}
+
+@media (min-width: 1200px) {
+    html, body, #main {height: 100%;}
+    #main {padding: 5em; margin-left: 50%;}
+}
